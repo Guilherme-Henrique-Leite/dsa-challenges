@@ -12,4 +12,4 @@ def smallestDivisor(nums, threshold):
             right = mid
         else:
             left = mid + 1
-    return left
+    return left 
