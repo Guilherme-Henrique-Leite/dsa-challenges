@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 
 s = "anagram"
@@ -21,3 +21,7 @@ def isAnagram(s: str, t: str) -> bool:
         return True
 
 isAnagram(s=s, t=t)
+
+
+def isAnagram(s: str, t: str) -> bool:
+    return Counter(s) == Counter(t)
